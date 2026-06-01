@@ -1,0 +1,11 @@
+_base: base.yaml
+# Direct midpoint-refinement arm (exps/1c_refine.py), brownian reference (linear
+# blend midpoint). The H2 comparison vs physics_refine, in a well-posed setting.
+bridge:
+  reference: brownian
+  condition_on_reference: true
+refine:
+  input_noise: 0.0
+train:
+  steps: 20000
+run_name: brownian_refine

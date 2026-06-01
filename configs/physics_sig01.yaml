@@ -1,0 +1,10 @@
+_base: base.yaml
+# Sigma-sweep control: same as v2 physics (sigma=0.1) but at the reduced 20k-step
+# probe budget, so it is directly comparable to the sig03/sig06 arms.
+bridge:
+  reference: physics
+  condition_on_reference: true
+  sigma: 0.1
+train:
+  steps: 20000
+run_name: physics_sig01

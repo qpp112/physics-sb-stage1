@@ -1,0 +1,7 @@
+_base: base.yaml
+bridge:
+  reference: physics
+  condition_on_reference: true            # v2: feed u_ref
+  condition_on_reference_mean: true       # v3: feed reference.mean(t) (aligned frame)
+  condition_on_occlusion: true            # v3c: feed warp-disagreement occlusion map (1ch)
+run_name: physics_v3c

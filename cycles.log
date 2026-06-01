@@ -1,0 +1,214 @@
+########## 22:44:07 v=refine_resid ref=physics steps=3000 n_train=800 wd=0.01 drop=0.0 noise=0.0 bch=32
+[cache] train=800 test=200 size=64 (1.6s)
+[train] final loss=0.01688
+RESULT [lose] variant=refine_resid ref=physics steps=3000 n_train=800 wd=0.01 drop=0.0 noise=0.0 base_ch=32 loss=0.01688 | trained=19.198 static=20.177 gain=-0.980dB | SSIM 0.572vs0.627
+########## 22:49:11 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.01 drop=0.0 noise=0.0 bch=32
+[cache] train=3000 test=200 size=64 (28.3s)
+[train] final loss=0.02548
+RESULT [WIN] variant=refine_resid ref=physics steps=3000 n_train=3000 wd=0.01 drop=0.0 noise=0.0 base_ch=32 loss=0.02548 | trained=20.180 static=20.177 gain=+0.003dB | SSIM 0.626vs0.627
+########## 22:54:30 v=refine_resid ref=physics steps=3000 n_train=6000 wd=0.01 drop=0.0 noise=0.0 bch=32
+[cache] train=4500 test=200 size=64 (60.2s)
+[train] final loss=0.03167
+RESULT [WIN] variant=refine_resid ref=physics steps=3000 n_train=6000 wd=0.01 drop=0.0 noise=0.0 base_ch=32 loss=0.03167 | trained=20.599 static=20.177 gain=+0.422dB | SSIM 0.642vs0.627
+########## 23:00:39 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32
+[cache] train=3000 test=200 size=64 (3.5s)
+[train] final loss=0.03377
+RESULT [WIN] variant=refine_resid ref=physics steps=3000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss=0.03377 | trained=20.855 static=20.177 gain=+0.678dB | SSIM 0.651vs0.627
+########## 23:05:36 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.01 drop=0.0 noise=0.10 bch=32
+[cache] train=3000 test=200 size=64 (2.5s)
+[train] final loss=0.03327
+RESULT [WIN] variant=refine_resid ref=physics steps=3000 n_train=3000 wd=0.01 drop=0.0 noise=0.1 base_ch=32 loss=0.03327 | trained=20.331 static=20.177 gain=+0.154dB | SSIM 0.633vs0.627
+########## 23:10:34 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.01 drop=0.0 noise=0.0 bch=16
+[cache] train=3000 test=200 size=64 (2.6s)
+[train] final loss=0.03188
+RESULT [lose] variant=refine_resid ref=physics steps=3000 n_train=3000 wd=0.01 drop=0.0 noise=0.0 base_ch=16 loss=0.03188 | trained=20.143 static=20.177 gain=-0.034dB | SSIM 0.620vs0.627
+########## 23:15:57 v=refine_resid ref=brownian steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32
+########## CYCLES WAVE 2 COMPLETE 23:16:04
+########## 23:16:15 128px ref=physics steps=8000 n_train=3000
+########## 23:16:22 128px ref=physics steps=8000 n_train=6000
+########## 23:16:29 128px ref=physics steps=12000 n_train=3000
+########## 23:16:35 128px ref=brownian steps=8000 n_train=3000
+########## 23:16:42 128px ref=physics steps=8000 n_train=3000
+########## CYCLES WAVE 5 COMPLETE 23:16:49
+########## 23:17:15 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=mse lr=cosine
+########## 23:17:22 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=l1 lr=cosine
+########## 23:17:29 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+########## 23:17:36 v=refine_resid ref=physics steps=6000 n_train=6000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+########## 23:17:42 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.10 bch=32 loss=charb lr=cosine
+########## 23:17:49 v=refine_resid ref=physics steps=10000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+########## 23:17:56 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.15 drop=0.3 noise=0.0 bch=32 loss=charb lr=cosine
+########## 23:18:02 v=refine_resid ref=brownian steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+########## 23:18:09 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=48 loss=charb lr=cosine
+########## 23:18:15 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=64 loss=charb lr=cosine
+########## CYCLES WAVE 4 COMPLETE 23:18:22
+########## 23:18:48 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.10 bch=32
+########## 23:18:55 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32
+########## 23:19:02 v=refine_resid ref=physics steps=3000 n_train=6000 wd=0.10 drop=0.2 noise=0.0 bch=32
+########## 23:19:08 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.05 drop=0.1 noise=0.0 bch=32
+########## 23:19:15 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=48
+########## 23:19:22 v=refine_resid ref=brownian steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32
+########## 23:19:29 v=refine ref=physics steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32
+########## 23:19:36 v=refine_resid ref=physics steps=1500 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32
+########## CYCLES WAVE 3 COMPLETE 23:19:43
+########## RERUN START 23:41:26 -- fixed harness
+########## 23:41:26 v=refine_resid ref=physics steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.10 bch=32 loss=mse lr=none
+[cache] train=3000 test=200 size=64 (2.7s)
+[train] final loss=0.03882
+RESULT [WIN] variant=refine_resid ref=physics steps=3000 n_train=3000 wd=0.1 drop=0.2 noise=0.1 base_ch=32 loss_fn=mse lr_sched=none train_loss=0.03882 | trained=20.814 static=20.177 gain=+0.637dB hi_gain=+0.724dB | SSIM 0.652vs0.627
+########## 23:46:43 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=mse lr=none
+[cache] train=3000 test=200 size=64 (2.6s)
+[train] final loss=0.03818
+RESULT [WIN] variant=refine_resid ref=physics steps=6000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=mse lr_sched=none train_loss=0.03818 | trained=20.795 static=20.177 gain=+0.618dB hi_gain=+0.648dB | SSIM 0.652vs0.627
+########## 23:56:31 v=refine_resid ref=physics steps=3000 n_train=6000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=mse lr=none
+[cache] train=4500 test=200 size=64 (3.2s)
+[train] final loss=0.03931
+RESULT [WIN] variant=refine_resid ref=physics steps=3000 n_train=6000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=mse lr_sched=none train_loss=0.03931 | trained=20.945 static=20.177 gain=+0.768dB hi_gain=+0.879dB | SSIM 0.654vs0.627
+########## 00:01:37 v=refine_resid ref=brownian steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=mse lr=none
+[cache] train=3000 test=200 size=64 (2.4s)
+[train] final loss=0.04616
+RESULT [DOMINATE] variant=refine_resid ref=brownian steps=3000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=mse lr_sched=none train_loss=0.04616 | trained=19.305 static=17.860 gain=+1.445dB hi_gain=+1.290dB | SSIM 0.535vs0.446
+########## 00:06:47 v=refine ref=physics steps=3000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=mse lr=none
+[cache] train=3000 test=200 size=64 (2.7s)
+[train] final loss=0.04196
+RESULT [WIN] variant=refine ref=physics steps=3000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=mse lr_sched=none train_loss=0.04196 | trained=20.368 static=20.177 gain=+0.191dB hi_gain=+0.487dB | SSIM 0.621vs0.627
+########## 00:11:56 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+[cache] train=3000 test=200 size=64 (2.4s)
+[train] final loss=0.12526
+RESULT [WIN] variant=refine_resid ref=physics steps=6000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.12526 | trained=20.694 static=20.177 gain=+0.516dB hi_gain=+0.474dB | SSIM 0.662vs0.627
+########## 00:22:01 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=l1 lr=cosine
+[cache] train=3000 test=200 size=64 (2.5s)
+[train] final loss=0.12500
+RESULT [WIN] variant=refine_resid ref=physics steps=6000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=l1 lr_sched=cosine train_loss=0.12500 | trained=20.691 static=20.177 gain=+0.514dB hi_gain=+0.491dB | SSIM 0.662vs0.627
+########## 00:32:05 v=refine_resid ref=physics steps=6000 n_train=6000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+[cache] train=4500 test=200 size=64 (3.2s)
+[train] final loss=0.12762
+RESULT [WIN] variant=refine_resid ref=physics steps=6000 n_train=6000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.12762 | trained=20.831 static=20.177 gain=+0.653dB hi_gain=+0.664dB | SSIM 0.666vs0.627
+########## 00:41:54 v=refine_resid ref=physics steps=10000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+[cache] train=3000 test=200 size=64 (3.0s)
+[train] final loss=0.11949
+RESULT [WIN] variant=refine_resid ref=physics steps=10000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.11949 | trained=20.703 static=20.177 gain=+0.526dB hi_gain=+0.493dB | SSIM 0.664vs0.627
+########## 00:57:54 v=refine_resid ref=brownian steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+[cache] train=3000 test=200 size=64 (2.3s)
+[train] final loss=0.15638
+RESULT [DOMINATE] variant=refine_resid ref=brownian steps=6000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.15638 | trained=19.206 static=17.860 gain=+1.346dB hi_gain=+1.044dB | SSIM 0.552vs0.446
+########## 01:07:36 v=refine_resid ref=physics steps=6000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=48 loss=charb lr=cosine
+[cache] train=3000 test=200 size=64 (2.5s)
+[train] final loss=0.11202
+RESULT [WIN] variant=refine_resid ref=physics steps=6000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=48 loss_fn=charb lr_sched=cosine train_loss=0.11202 | trained=20.814 static=20.177 gain=+0.637dB hi_gain=+0.580dB | SSIM 0.668vs0.627
+########## 01:17:29 128px ref=physics steps=8000 n_train=3000
+[cache] train=3000 test=200 size=128 (30.7s)
+[train] final loss=0.11471
+RESULT [WIN] variant=refine_resid ref=physics steps=8000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.11471 | trained=21.124 static=20.312 gain=+0.812dB hi_gain=+0.700dB | SSIM 0.675vs0.622
+########## 01:31:13 128px ref=physics steps=8000 n_train=6000
+[cache] train=4500 test=200 size=128 (40.1s)
+[train] final loss=0.12413
+RESULT [WIN] variant=refine_resid ref=physics steps=8000 n_train=6000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.12413 | trained=21.168 static=20.312 gain=+0.856dB hi_gain=+0.774dB | SSIM 0.679vs0.622
+########## 01:45:13 128px ref=brownian steps=8000 n_train=3000
+[cache] train=3000 test=200 size=128 (9.9s)
+[train] final loss=0.14703
+RESULT [DOMINATE] variant=refine_resid ref=brownian steps=8000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.14703 | trained=19.235 static=17.860 gain=+1.375dB hi_gain=+1.016dB | SSIM 0.548vs0.426
+########## RERUN COMPLETE 01:58:35
+########## H2 FAIR 128px START 06:51:23
+########## 06:51:23 v=refine_resid ref=physics px=128 steps=8000 n_train=3000 wd=0.10 drop=0.2 noise=0.0 bch=32 loss=charb lr=cosine
+[cache] train=3000 test=200 size=128 (5.9s)
+[train] final loss=0.11562
+RESULT [WIN] variant=refine_resid ref=physics size=128 steps=8000 n_train=3000 wd=0.1 drop=0.2 noise=0.0 base_ch=32 loss_fn=charb lr_sched=cosine train_loss=0.11562 | trained=21.073 static=20.312 gain=+0.761dB hi_gain=+0.662dB hi_trained=19.064 resid_closed=0.087 | SSIM 0.675vs0.622
+########## FAIR PAIRED CYCLES START 07:06:13
+########## 07:06:13 FAIR_PAIR px=64 steps=3000 n_train=3000
+PAIRED_RESULT size=64 steps=500 n_train=3000 wd=0.1 drop=0.2 loss=mse lr=none | phys_tr=20.326 brwn_tr=18.260 mean_delta=+2.066 hi_delta=+1.548 phys_wins=197/200 verdict=physics
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:50: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:61: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+[fair] cache ok train=3000 test=200 size=64 (2.7s)
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (322s)
+=== FAIR PAIRED H2  size=64 steps=3000 n_train=3000 wd=0.1 drop=0.2 loss=mse ===
+  H2 fair verdict: physics WINS on absolute PSNR
+PAIRED_RESULT size=64 steps=3000 n_train=3000 wd=0.1 drop=0.2 loss=mse lr=none | phys_tr=20.870 brwn_tr=19.316 mean_delta=+1.553 hi_delta=+1.221 phys_wins=194/200 verdict=physics
+########## 07:16:52 FAIR_PAIR px=64 steps=3000 n_train=3000
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:50: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:61: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+[fair] cache ok train=3000 test=200 size=64 (2.6s)
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (319s)
+=== FAIR PAIRED H2  size=64 steps=3000 n_train=3000 wd=0.1 drop=0.2 loss=mse ===
+  H2 fair verdict: physics WINS on absolute PSNR
+PAIRED_RESULT size=64 steps=3000 n_train=3000 wd=0.1 drop=0.2 loss=mse lr=none | phys_tr=20.863 brwn_tr=19.316 mean_delta=+1.547 hi_delta=+1.197 phys_wins=195/200 verdict=physics
+########## 07:27:31 FAIR_PAIR px=128 steps=8000 n_train=6000
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:50: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:61: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+[fair] cache ok train=4500 test=200 size=128 (8.2s)
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (861s)
+=== FAIR PAIRED H2  size=128 steps=8000 n_train=6000 wd=0.1 drop=0.2 loss=charb ===
+  H2 fair verdict: physics WINS on absolute PSNR
+PAIRED_RESULT size=128 steps=8000 n_train=6000 wd=0.1 drop=0.2 loss=charb lr=cosine | phys_tr=21.214 brwn_tr=19.487 mean_delta=+1.727 hi_delta=+1.264 phys_wins=192/200 verdict=physics
+########## 07:56:44 FAIR_PAIR px=128 steps=8000 n_train=6000
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:50: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:61: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+[fair] cache ok train=4500 test=200 size=128 (12.0s)
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (899s)
+=== FAIR PAIRED H2  size=128 steps=8000 n_train=6000 wd=0.1 drop=0.2 loss=charb ===
+  H2 fair verdict: physics WINS on absolute PSNR
+PAIRED_RESULT size=128 steps=8000 n_train=6000 wd=0.1 drop=0.2 loss=charb lr=cosine | phys_tr=21.209 brwn_tr=19.448 mean_delta=+1.761 hi_delta=+1.407 phys_wins=196/200 verdict=physics
+########## 08:26:41 FAIR_PAIR px=128 steps=12000 n_train=6000
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:50: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+/home/ubuntu/physics-sb-stage1/exps/fair_pair.py:61: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+[fair] cache ok train=4500 test=200 size=128 (14.1s)
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (1315s)
+=== FAIR PAIRED H2  size=128 steps=12000 n_train=6000 wd=0.1 drop=0.2 loss=charb ===
+  H2 fair verdict: physics WINS on absolute PSNR
+PAIRED_RESULT size=128 steps=12000 n_train=6000 wd=0.1 drop=0.2 loss=charb lr=cosine | phys_tr=21.234 brwn_tr=19.477 mean_delta=+1.756 hi_delta=+1.325 phys_wins=192/200 verdict=physics
+########## FAIR PAIRED CYCLES COMPLETE 09:11:01
+########## FULL FAIR 256px QUEUE START 09:11:30
+########## SCALE GATE START 09:11:30
+
+########## SCALE_PROBE256 base_ch=32 steps=4000 batch=8 ##########
+[fair] cache ok train=3000 test=200 size=256 (94.3s)
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (648s)
+Traceback (most recent call last):
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 47.40 GiB of which 0 bytes is free. Of the allocated memory 35.76 GiB is allocated by PyTorch, and 503.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+########## SCALE_PROBE256 base_ch=48 steps=4000 batch=6 ##########
+[fair] cache ok train=3000 test=200 size=256 (21.4s)
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (635s)
+Traceback (most recent call last):
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 47.40 GiB of which 0 bytes is free. Of the allocated memory 36.66 GiB is allocated by PyTorch, and 921.56 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+########## SCALE GATE BLOCKED 09:56:16
+SCALE_VERDICT scalable=FAIL blocked_full_plan=1 probe256=fail
+########## FULL FAIR ABORTED — scale gate failed 09:56:16
+########## RESUME FULL FAIR 18:22:01
+########## SCALE GATE START 18:22:01
+
+########## SCALE_PROBE256 base_ch=32 steps=4000 batch=4 eval_batch=4 ##########
+[fair] cache ok train=3000 test=200 size=256 (29.8s)
+[fair] train_batch=4 eval_batch=4
+[fair] training physics (paired batches)...
+[fair] training brownian (same init, same batches)... (418s)
+PAIRED_RESULT size=256 steps=4000 n_train=3000 wd=0.1 drop=0.2 loss=charb lr=cosine | phys_tr=20.392 brwn_tr=18.578 mean_delta=+1.815 hi_delta=+1.219 phys_wins=190/200 verdict=physics
+########## SCALE GATE PASS 18:36:38 base_ch=32 steps=12000
+SCALE_VERDICT scalable=PASS base_ch=32 steps=12000
+########## FULL_FAIR seed=0 px=256 bch=32 batch=4
+[full] building cache size=256 train=3000 test=1000...
+[full] cache ok (38.4s)
+[full] training physics (paired batches)...
+[full] training brownian... (1219s)
+[full] full metrics eval (physics)...
+[full] full metrics eval (brownian)...
+  prereg H2 refine: PASS  []
+PAIRED_RESULT size=256 steps=12000 n_train=3000 wd=0.1 drop=0.2 loss=charb lr=cosine | phys_tr=20.804 brwn_tr=19.042 mean_delta=+1.762 hi_delta=+1.259 phys_wins=969/1000 verdict=physics
+FULL_PAIRED_RESULT size=256 seed=0 steps=12000 n_test=1000 | mean_delta=+1.762 hi_delta=+1.259 phys_psnr=20.804 brwn_psnr=19.042 phys_ssim=0.6699 brwn_ssim=0.5553 phys_lpips=0.3241 brwn_lpips=0.5178 phys_epe=0.058 brwn_epe=0.078 wins=969/1000 prereg=PASS
+########## FULL_FAIR seed=1 px=256 bch=32 batch=4
+[full] building cache size=256 train=3000 test=1000...
+[full] cache ok (27.8s)
+[full] training physics (paired batches)...
+[full] training brownian... (1191s)
+[full] full metrics eval (physics)...
+[full] full metrics eval (brownian)...
+  prereg H2 refine: PASS  []
+PAIRED_RESULT size=256 steps=12000 n_train=3000 wd=0.1 drop=0.2 loss=charb lr=cosine | phys_tr=20.788 brwn_tr=19.013 mean_delta=+1.775 hi_delta=+1.259 phys_wins=971/1000 verdict=physics
+FULL_PAIRED_RESULT size=256 seed=1 steps=12000 n_test=1000 | mean_delta=+1.775 hi_delta=+1.259 phys_psnr=20.788 brwn_psnr=19.013 phys_ssim=0.6698 brwn_ssim=0.5528 phys_lpips=0.3230 brwn_lpips=0.5180 phys_epe=0.058 brwn_epe=0.078 wins=971/1000 prereg=PASS
+########## FULL FAIR COMPLETE 20:00:22

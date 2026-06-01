@@ -1,0 +1,11 @@
+_base: base.yaml
+# Sigma-sweep arm: strong bridge noise (std at t=0.5 = 0.30 in [-1,1] units),
+# forcing the model to learn a drift from (x_A, x_B, u_ref) rather than reading
+# M off a near-noiseless x_t.
+bridge:
+  reference: physics
+  condition_on_reference: true
+  sigma: 0.6
+train:
+  steps: 20000
+run_name: physics_sig06

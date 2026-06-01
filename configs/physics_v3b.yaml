@@ -1,0 +1,12 @@
+_base: base.yaml
+bridge:
+  reference: physics
+  condition_on_reference: true            # v2: feed u_ref
+  condition_on_reference_mean: true       # v3: also feed reference.mean(t) (aligned frame)
+model:
+  # v3b attention fix: with channel_mult [1,2,4,4] the net only reaches 32x32 at
+  # 256px, so the original attn_resolutions [16,8] NEVER fired (1 attn block, the
+  # mid-block only). Enable global self-attention at the 32x32 bottleneck (6 attn
+  # blocks) for long-range reasoning at large displacement. +1.3M params (~5%).
+  attn_resolutions: [32]
+run_name: physics_v3b

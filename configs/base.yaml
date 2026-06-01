@@ -1,0 +1,47 @@
+# Shared across all pilot runs. Per-condition configs override `reference` only.
+
+data:
+  root: /home/ubuntu/datasets/FlyingThings3D
+  pass: cleanpass                          # cleanpass | finalpass
+  size: 256
+  min_flow: 40.0                           # min chained ||F_A->B||_inf in px
+  train_clips: 3000
+  val_clips: 300
+  test_clips: 1000
+  num_workers: 4
+
+bridge:
+  reference: brownian                      # OVERRIDDEN per condition
+  sigma: 0.1                               # bridge noise scale (in [-1,1] image units)
+  t_sampling: uniform                      # uniform | beta_peak_at_half
+  beta_concentration: 4.0                  # only if t_sampling=beta_peak_at_half
+  condition_on_reference: true             # feed u_ref to the UNet as extra input channels (v2). false -> v1 (in_channels=9)
+
+model:
+  base_channels: 64
+  channel_mult: [1, 2, 4, 4]
+  num_res_blocks: 2
+  attn_resolutions: [16, 8]
+  time_emb_dim: 256
+  dropout: 0.1
+
+train:
+  steps: 75000
+  batch_size: 16
+  lr: 2.0e-4
+  warmup_steps: 2000
+  ema_decay: 0.9999
+  grad_clip: 1.0
+  mixed_precision: true
+  log_every: 100
+  ckpt_every: 5000
+  val_every: 5000
+  seed: 0                                  # OVERRIDDEN per seed
+
+eval:
+  num_steps: 16                            # SDE integrator steps for inference
+  num_samples_per_input: 1                 # deterministic by default; >1 for stochastic
+  strata_edges: [40, 60, 100, 1000000000]       # px boundaries (left-closed)
+
+paths:
+  out_dir: runs                            # all artifacts written under runs/<run_name>/

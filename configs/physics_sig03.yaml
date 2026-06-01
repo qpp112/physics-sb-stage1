@@ -1,0 +1,10 @@
+_base: base.yaml
+# Sigma-sweep arm: larger bridge noise so x_t = I_t + sigma*sqrt(t(1-t))*eps no
+# longer trivially leaks the target M (std at t=0.5 = 0.15 in [-1,1] units).
+bridge:
+  reference: physics
+  condition_on_reference: true
+  sigma: 0.3
+train:
+  steps: 20000
+run_name: physics_sig03

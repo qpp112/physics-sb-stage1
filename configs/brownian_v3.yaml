@@ -1,0 +1,6 @@
+_base: base.yaml
+bridge:
+  reference: brownian
+  condition_on_reference: true            # v2: feed u_ref
+  condition_on_reference_mean: true       # v3: also feed reference.mean(t) (linear blend)
+run_name: brownian_v3

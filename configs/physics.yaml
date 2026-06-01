@@ -1,0 +1,4 @@
+_base: base.yaml
+bridge:
+  reference: physics
+run_name: physics

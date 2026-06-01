@@ -1,0 +1,11 @@
+_base: base.yaml
+# Direct midpoint-refinement arm (exps/1c_refine.py). Predicts M from the physics
+# reference midpoint in one forward pass -> no x_t leak, no open-loop compounding.
+bridge:
+  reference: physics
+  condition_on_reference: true
+refine:
+  input_noise: 0.0          # optional Gaussian aug on the reference midpoint input
+train:
+  steps: 20000
+run_name: physics_refine

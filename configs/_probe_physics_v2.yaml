@@ -1,0 +1,13 @@
+_base: base.yaml
+bridge:
+  reference: physics
+  condition_on_reference: true
+run_name: physics_v2_probe
+data:
+  train_clips: 400
+  val_clips: 100
+train:
+  steps: 700
+  log_every: 50
+  val_every: 200
+  ckpt_every: 100000

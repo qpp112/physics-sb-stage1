@@ -1,0 +1,10 @@
+_base: base.yaml
+bridge:
+  reference: brownian
+  condition_on_reference: true            # v2: feed u_ref
+  condition_on_reference_mean: true       # v3: also feed reference.mean(t) (linear blend)
+model:
+  # v3b attention fix (see physics_v3b.yaml): enable global self-attention at the
+  # 32x32 bottleneck. Applied symmetrically so brownian-vs-physics stays fair.
+  attn_resolutions: [32]
+run_name: brownian_v3b
