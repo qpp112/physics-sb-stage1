@@ -1,0 +1,54 @@
+{
+  "scalable": true,
+  "pending_128": false,
+  "failures": [],
+  "checks": {
+    "128_fair": {
+      "mean_delta": 1.761,
+      "wins": "196",
+      "n": "200",
+      "phys_tr": 21.209,
+      "brwn_tr": 19.448,
+      "hi_delta": "+1.407"
+    },
+    "64_to_128_delta_ratio": 0.8523717328170378,
+    "128_gain": 0.761,
+    "recommendation": "run with --probe256 before full 256px commit"
+  },
+  "best_paired": {
+    "64": {
+      "size": "64",
+      "steps": "500",
+      "n_train": "3000",
+      "wd": "0.1",
+      "drop": "0.2",
+      "loss": "mse",
+      "lr": "none",
+      "phys": "20.326",
+      "brwn": "18.260",
+      "delta": "+2.066",
+      "hi_delta": "+1.548",
+      "wins": "197",
+      "n": "200",
+      "verdict": "physics"
+    },
+    "128": {
+      "size": "128",
+      "steps": "8000",
+      "n_train": "6000",
+      "wd": "0.1",
+      "drop": "0.2",
+      "loss": "charb",
+      "lr": "cosine",
+      "phys": "21.209",
+      "brwn": "19.448",
+      "delta": "+1.761",
+      "hi_delta": "+1.407",
+      "wins": "196",
+      "n": "200",
+      "verdict": "physics"
+    },
+    "256_probe": null
+  },
+  "strategies": []
+}
